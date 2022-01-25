@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: name-processor
+
+modified-names: 25
+
+file:
+  path: classpath*:/batch/*.txt
+  result-name: result.txt
+
+batch:
+  chunk-size: 200
+  partitioner-size: 10
+
+executor:
+  pool-size: 5
+
